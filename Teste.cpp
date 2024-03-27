@@ -1,21 +1,26 @@
-#include <string> //
-using namespace std; // Usando a biblioteca padrão de nomes do C++
+#include <iostream> // Incluindo a biblioteca de entrada e saída do sistema
 
-int main() { // Criando uma função main que retorna um inteiro
-	
-	setlocale(LC_ALL,"Portuguese"); // Usando a linguagem portuguesa no código
-	
-	int num; // Criando a variável do tipo inteiro chamada "num"
-	
-	cout << "Digite um número" <<; // Dizendo para o usuário digitar um número
-	
-	cin >> num; // Dizendo que num irá receber dados do usuário, usando a keyword "cin"
-	
-	if (num % 2 == 0){
-		cout<< "Par" << endl;
-	}
-	else{
-		cout << "Não-par" << endl;
-	}
-	return 0; // Retorna 0 se o código funcionar
+using namespace std; // Usando a biblioteca padrão do c++ para nomes de variáveis 
+
+int main(){ // Criando a função main que retornará um inteiro se der certo
+
+    cout << "Digite um numero" << endl; //Printando
+
+    int num; // Criando a variável que receberá dados do usuário
+
+    int i = 0; // Criando e inicializando a variável de loop "i"
+
+    cin >> num; // Recebendo os dados do usuário na variável num
+
+    while(i <= num){ // Começando um loop while com a condição de que i seja menor ou igual a num // O Laço "for" tem a mesma sintaxe de java
+        if (num > 1000){ // Se num for maior que 1000
+            cout << "Digite um numero menor" << endl;
+            break; // O loop será quebrado
+        }
+        else{ // se não
+            cout << i << endl;
+            i++; 
+        }
+    }
+    return 0; // Retorne 0 se nenhum erro for encontrado
 }
